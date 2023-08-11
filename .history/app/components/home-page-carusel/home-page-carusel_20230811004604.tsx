@@ -17,17 +17,15 @@ export const HomePageCarusel = () => {
 
 
     React.useEffect(()=>{
-        const timer = setInterval(()=>{
+        setTimeout(()=>{
             if(state < max){
                 setState(state+1 as keyof Carusel)
             }else{
                 setState(1)
             }
 
-        },18000)
-        return()=>{
-            clearInterval(timer)
-        }
+
+        },15000)
     },[state])
 
     React.useEffect(()=>{setState(1)},[])

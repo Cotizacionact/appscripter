@@ -24,10 +24,10 @@ export const HomePageCarusel = () => {
                 setState(1)
             }
 
-        },18000)
         return()=>{
             clearInterval(timer)
         }
+        },18000)
     },[state])
 
     React.useEffect(()=>{setState(1)},[])

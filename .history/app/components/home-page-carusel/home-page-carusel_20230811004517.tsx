@@ -17,17 +17,15 @@ export const HomePageCarusel = () => {
 
 
     React.useEffect(()=>{
-        const timer = setInterval(()=>{
+        setTimeout(()=>{
             if(state < max){
                 setState(state+1 as keyof Carusel)
             }else{
                 setState(1)
             }
 
-        },18000)
-        return()=>{
-            clearInterval(timer)
-        }
+
+        },15000)
     },[state])
 
     React.useEffect(()=>{setState(1)},[])
@@ -42,8 +40,8 @@ export const HomePageCarusel = () => {
                 <AiOutlineArrowUp />
             </button>
             <div className={`${state === 1 ? "w-4 bg-black/50":"w-3 bg-black/25"} h-1  absolute left-[49%]`}></div>
-            <div className={`${state === 2 ? "w-4 bg-black/50":"w-3 bg-black/25"} h-1  absolute left-[50%]`}></div>
-            <div className={`${state === 3 ? "w-4 bg-black/50":"w-3 bg-black/25"} h-1  absolute left-[51%]`}></div>
+            <div className='w-3 h-1 bg-black/50 absolute left-[50%]'></div>
+            <div className='w-3 h-1 bg-black/50 absolute left-[51%]'></div>
         </div>
     );
 };

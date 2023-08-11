@@ -4,34 +4,18 @@ import React from 'react';
 import Image from '@/node_modules/next/image';
 
 type Carusel = {
-    0: React.ReactNode
     1: React.ReactNode;
     2: React.ReactNode;
     3: React.ReactNode;
 };
 
 export const HomePageCarusel = () => {
+    React.useEffect(()=>{
+
+    })
     const max = 3
     const min = 1
     const [state, setState] = React.useState<keyof Carusel>(1);
-
-
-    React.useEffect(()=>{
-        const timer = setInterval(()=>{
-            if(state < max){
-                setState(state+1 as keyof Carusel)
-            }else{
-                setState(1)
-            }
-
-        },18000)
-        return()=>{
-            clearInterval(timer)
-        }
-    },[state])
-
-    React.useEffect(()=>{setState(1)},[])
-
     return (
         <div className="relative">
             {handleCarusel[state as keyof Carusel]}
@@ -41,15 +25,14 @@ export const HomePageCarusel = () => {
             <button className="absolute left-0 top-[50%] flex w-10 -rotate-90 justify-center bg-black p-0.5 text-white opacity-40 hover:opacity-70" onClick={()=>{if(state > min){setState(state-1 as keyof Carusel)}else{setState(3)}}}>
                 <AiOutlineArrowUp />
             </button>
-            <div className={`${state === 1 ? "w-4 bg-black/50":"w-3 bg-black/25"} h-1  absolute left-[49%]`}></div>
-            <div className={`${state === 2 ? "w-4 bg-black/50":"w-3 bg-black/25"} h-1  absolute left-[50%]`}></div>
-            <div className={`${state === 3 ? "w-4 bg-black/50":"w-3 bg-black/25"} h-1  absolute left-[51%]`}></div>
+            <div className='w-3 h-1 bg-black/50 absolute left-[45%]'></div>
+            <div className='w-3 h-1 bg-black/50 absolute left-[50%]'></div>
+            <div className='w-3 h-1 bg-black/50 absolute left-[51%]'></div>
         </div>
     );
 };
 
 const handleCarusel: Carusel = {
-    0: <Home />,
     1: <Home />,
     2: <Two />,
     3: <Three />,
