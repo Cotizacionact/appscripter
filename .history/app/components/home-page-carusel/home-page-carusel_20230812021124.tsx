@@ -2,7 +2,6 @@
 import { AiOutlineArrowUp } from 'react-icons/ai';
 import React from 'react';
 import Image from '@/node_modules/next/image';
-import Link from '@/node_modules/next/link';
 
 type Carusel = {
     0: React.ReactNode
@@ -74,11 +73,9 @@ function Home() {
                     Get Quote
                 </button>
                 {fiverr === true && 
-                    <Link href="https://www.fiverr.com/appscripter?up_rollout=true">
-                        <button className="mt-2 rounded bg-green-500 p-2 text-white hover:bg-green-700" >
-                            Get Quote
-                        </button>
-                    </Link>
+                    <button className="mt-2 rounded bg-green-500 p-2 text-white hover:bg-green-700" onClick={()=>{alert("Thanks for being interested in our quotes! These can be found in fiverr, but will later be presented in app scripter as well")}}>
+                        Get Quote
+                    </button>
                 }
             </div>
             <div className="flex w-1/2 items-center justify-center p-2">

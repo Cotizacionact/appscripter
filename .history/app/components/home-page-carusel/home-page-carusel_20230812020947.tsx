@@ -2,7 +2,6 @@
 import { AiOutlineArrowUp } from 'react-icons/ai';
 import React from 'react';
 import Image from '@/node_modules/next/image';
-import Link from '@/node_modules/next/link';
 
 type Carusel = {
     0: React.ReactNode
@@ -57,7 +56,6 @@ const handleCarusel: Carusel = {
 };
 
 function Home() {
-    const [fiverr, setFiverr]= React.useState<boolean>(false)
     return (
         <div className="flex h-[50vh] p-2 px-10">
             <div className="w-1/2 p-2">
@@ -70,16 +68,9 @@ function Home() {
                     and development process to ensure you achive your programing
                     needs.
                 </h2>
-                <button className="mt-2 rounded bg-green-500 p-2 text-white hover:bg-green-700" onClick={()=>{alert("Thanks for being interested in our quotes! These can be found in fiverr, but will later be presented in app scripter as well");setFiverr(!fiverr)}}>
+                <button className="mt-2 rounded bg-green-500 p-2 text-white hover:bg-green-700" onClick={()=>{alert("Thanks for being interested in our quotes! These can be found in fiverr, but will later be presented in app scripter as well")}}>
                     Get Quote
                 </button>
-                {fiverr === true && 
-                    <Link href="https://www.fiverr.com/appscripter?up_rollout=true">
-                        <button className="mt-2 rounded bg-green-500 p-2 text-white hover:bg-green-700" >
-                            Get Quote
-                        </button>
-                    </Link>
-                }
             </div>
             <div className="flex w-1/2 items-center justify-center p-2">
                 <Image src="/Logo_Original.png" width={400} height={200} alt="Logo"/>
