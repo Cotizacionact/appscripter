@@ -72,7 +72,7 @@ function Home() {
                     and development process to ensure you achive your programing
                     needs.
                 </h2>
-                <button className="mt-2 rounded bg-green-500 p-2 text-white hover:bg-green-700 w-1/2 md:w-1/3" onClick={()=>{alert("Thanks for being interested in our quotes! These can be found in fiverr, but will later be presented in app scripter as well. You can see them here https://www.fiverr.com/appscripter?up_rollout=true");setFiverr(!fiverr)}}>
+                <button className="mt-2 rounded bg-green-500 p-2 text-white hover:bg-green-700 w-1/2" onClick={()=>{alert("Thanks for being interested in our quotes! These can be found in fiverr, but will later be presented in app scripter as well. You can see them here https://www.fiverr.com/appscripter?up_rollout=true");setFiverr(!fiverr)}}>
                     Get Quote
                 </button>
                 {fiverr === true && 
@@ -93,7 +93,7 @@ function Home() {
 function Two() {
     return (
         <div className="flex md:h-[50vh] p-2 px-10">
-            <div className="w-full md:w-1/2 p-2">
+            <div className="w-1/2 p-2">
                 <h1 className="text-5xl font-bold">No recurring fees</h1>
                 <h2 className="mt-2">
                     Although exceptions apply, we provide services where your
@@ -101,11 +101,11 @@ function Two() {
                     to a database. This being acheived with the help of Google
                     App Script
                 </h2>
-                <button className="mt-2 rounded bg-green-500 p-2 text-white hover:bg-green-700" onClick={()=>alert("All our current services are listed on fiverr.com at https://www.fiverr.com/appscripter?up_rollout=true")}>
+                <button className="mt-2 rounded bg-green-500 p-2 text-white hover:bg-green-700">
                     Learn More
                 </button>
             </div>
-            <div className="hidden md:relative w-1/2 p-2">
+            <div className="relative w-1/2 p-2">
                 <img src="/HomePage2.png" className="absolute left-[25%] h-full" />
                 <h1 className="absolute left-14 top-[30%] -rotate-45 text-xl font-bold">
                     Free 15 Gb Storage!
@@ -148,7 +148,7 @@ function Three() {
                 tools. Using state of the art libraries and reliable providers
                 we bring value to any costumer.
                 <center>
-                    <button className="mt-2 rounded bg-green-500 p-2 text-white hover:bg-green-700 w-1/2 md:w-1/3" onClick={()=>alert("All our current services are listed on fiverr.com at https://www.fiverr.com/appscripter?up_rollout=true")}>
+                    <button className="mt-2 rounded bg-green-500 p-2 text-white hover:bg-green-700">
                         Learn More
                     </button>
                 </center>

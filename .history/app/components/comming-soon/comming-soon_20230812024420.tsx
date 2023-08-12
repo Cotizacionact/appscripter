@@ -18,7 +18,7 @@ export const CommingSoon = ({}) => {
                     <Image src="/CommingSoon.png" width={400} height={200} alt="Image" />
                 </div>
 
-                <div className="md:w-1/2 w-full md:pr-12 ">
+                <div className="md:w-1/2 w-full pr-12">
                     <h1 className="w-full text-center text-4xl">
                         Hire a Freelancer
                     </h1>

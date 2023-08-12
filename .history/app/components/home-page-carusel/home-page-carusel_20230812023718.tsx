@@ -61,7 +61,7 @@ const handleCarusel: Carusel = {
 function Home() {
     const [fiverr, setFiverr]= React.useState<boolean>(false)
     return (
-        <div className="flex md:h-[50vh] p-2 px-10 flex-wrap">
+        <div className="flex h-[50vh] p-2 px-10 flex-wrap">
             <div className="w-full md:w-1/2 p-2">
                 <h1 className="text-5xl font-bold">
                     Create tailor made websites and web aplications.
@@ -72,7 +72,7 @@ function Home() {
                     and development process to ensure you achive your programing
                     needs.
                 </h2>
-                <button className="mt-2 rounded bg-green-500 p-2 text-white hover:bg-green-700 w-1/2 md:w-1/3" onClick={()=>{alert("Thanks for being interested in our quotes! These can be found in fiverr, but will later be presented in app scripter as well. You can see them here https://www.fiverr.com/appscripter?up_rollout=true");setFiverr(!fiverr)}}>
+                <button className="mt-2 rounded bg-green-500 p-2 text-white hover:bg-green-700" onClick={()=>{alert("Thanks for being interested in our quotes! These can be found in fiverr, but will later be presented in app scripter as well. You can see them here https://www.fiverr.com/appscripter?up_rollout=true");setFiverr(!fiverr)}}>
                     Get Quote
                 </button>
                 {fiverr === true && 
@@ -92,8 +92,8 @@ function Home() {
 
 function Two() {
     return (
-        <div className="flex md:h-[50vh] p-2 px-10">
-            <div className="w-full md:w-1/2 p-2">
+        <div className="flex h-[50vh] p-2 px-10">
+            <div className="w-1/2 p-2">
                 <h1 className="text-5xl font-bold">No recurring fees</h1>
                 <h2 className="mt-2">
                     Although exceptions apply, we provide services where your
@@ -101,11 +101,11 @@ function Two() {
                     to a database. This being acheived with the help of Google
                     App Script
                 </h2>
-                <button className="mt-2 rounded bg-green-500 p-2 text-white hover:bg-green-700" onClick={()=>alert("All our current services are listed on fiverr.com at https://www.fiverr.com/appscripter?up_rollout=true")}>
+                <button className="mt-2 rounded bg-green-500 p-2 text-white hover:bg-green-700">
                     Learn More
                 </button>
             </div>
-            <div className="hidden md:relative w-1/2 p-2">
+            <div className="relative w-1/2 p-2">
                 <img src="/HomePage2.png" className="absolute left-[25%] h-full" />
                 <h1 className="absolute left-14 top-[30%] -rotate-45 text-xl font-bold">
                     Free 15 Gb Storage!
@@ -119,8 +119,8 @@ function Three() {
     const [show, setShow] = React.useState<boolean>(false);
     const [show2, setShow2] = React.useState<boolean>(false);
     return (
-        <div className="flex md:h-[50vh] p-2 px-10 flex-wrap">
-            <div className="flex md:w-1/3 w-full flex-col items-center">
+        <div className="flex h-[50vh] p-2 px-10">
+            <div className="flex w-1/3 flex-col items-center">
                 <h1 className="text-center text-4xl">Front End</h1>
                 {show === false && <p className="p-2 text-center">
                     This part of development relates to visual aspect of the
@@ -142,18 +142,18 @@ function Three() {
                     )}
                 </div>
             </div>
-            <div className="md:w-1/3  w-full p-2">
+            <div className="w-1/3 p-2">
                 <h1 className="text-center text-5xl font-bold">Our Tools</h1>
                 <h2 className="mt-2 text-center"></h2>High quality work require outstanding
                 tools. Using state of the art libraries and reliable providers
                 we bring value to any costumer.
                 <center>
-                    <button className="mt-2 rounded bg-green-500 p-2 text-white hover:bg-green-700 w-1/2 md:w-1/3" onClick={()=>alert("All our current services are listed on fiverr.com at https://www.fiverr.com/appscripter?up_rollout=true")}>
+                    <button className="mt-2 rounded bg-green-500 p-2 text-white hover:bg-green-700">
                         Learn More
                     </button>
                 </center>
             </div>
-            <div className="flex md:w-1/3  w-full flex-col items-center">
+            <div className="flex w-1/3 flex-col items-center">
                 <h1 className="text-center text-4xl">Back End</h1>
                {show2 === false && <p className="text-center">
                     This part of development relates to data aspect of the

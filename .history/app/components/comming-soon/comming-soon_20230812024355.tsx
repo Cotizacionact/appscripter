@@ -18,7 +18,7 @@ export const CommingSoon = ({}) => {
                     <Image src="/CommingSoon.png" width={400} height={200} alt="Image" />
                 </div>
 
-                <div className="md:w-1/2 w-full md:pr-12 ">
+                <div className="md:w-1/2 w-full pr-12">
                     <h1 className="w-full text-center text-4xl">
                         Hire a Freelancer
                     </h1>
@@ -32,7 +32,7 @@ export const CommingSoon = ({}) => {
                     </p>
                     <div className="w-full flex justify-center md:justify-end pr-4">
                     <Link href="https://www.fiverr.com/appscripter?up_rollout=true" className='w-full flex justify-center'>
-                        <Button1 className="w-2/3 md:w-1/3 text-white">Go To Fiverr Now!</Button1>
+                        <Button1 className="w-1/3 text-white">Go To Fiverr Now!</Button1>
                     </Link>
                     </div>
                 </div>

@@ -7,7 +7,7 @@ import React from "react"
 export const Header = ({ }: {  }) => {
 
     const [show, setShow] = React.useState<boolean>(false)
-    console.log(show)
+
     return (
         <header className="w-full flex items-center justify-between bg-[#1d4ed8] p-5 h-[8vh]">
             <Image src={"/Logo_Original.png"} width={40} height={40} alt="Logo" className="rounded bg-white " />

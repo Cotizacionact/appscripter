@@ -93,7 +93,7 @@ function Home() {
 function Two() {
     return (
         <div className="flex md:h-[50vh] p-2 px-10">
-            <div className="w-full md:w-1/2 p-2">
+            <div className="w-1/2 p-2">
                 <h1 className="text-5xl font-bold">No recurring fees</h1>
                 <h2 className="mt-2">
                     Although exceptions apply, we provide services where your
@@ -101,7 +101,7 @@ function Two() {
                     to a database. This being acheived with the help of Google
                     App Script
                 </h2>
-                <button className="mt-2 rounded bg-green-500 p-2 text-white hover:bg-green-700" onClick={()=>alert("All our current services are listed on fiverr.com at https://www.fiverr.com/appscripter?up_rollout=true")}>
+                <button className="mt-2 rounded bg-green-500 p-2 text-white hover:bg-green-700">
                     Learn More
                 </button>
             </div>

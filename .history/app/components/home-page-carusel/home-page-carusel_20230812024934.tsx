@@ -101,7 +101,7 @@ function Two() {
                     to a database. This being acheived with the help of Google
                     App Script
                 </h2>
-                <button className="mt-2 rounded bg-green-500 p-2 text-white hover:bg-green-700" onClick={()=>alert("All our current services are listed on fiverr.com at https://www.fiverr.com/appscripter?up_rollout=true")}>
+                <button className="mt-2 rounded bg-green-500 p-2 text-white hover:bg-green-700">
                     Learn More
                 </button>
             </div>

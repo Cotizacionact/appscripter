@@ -7,7 +7,7 @@ import React from "react"
 export const Header = ({ }: {  }) => {
 
     const [show, setShow] = React.useState<boolean>(false)
-    console.log(show)
+
     return (
         <header className="w-full flex items-center justify-between bg-[#1d4ed8] p-5 h-[8vh]">
             <Image src={"/Logo_Original.png"} width={40} height={40} alt="Logo" className="rounded bg-white " />
@@ -16,7 +16,7 @@ export const Header = ({ }: {  }) => {
                 <p onClick={()=>alert("All our current services are listed on fiverr.com at https://www.fiverr.com/appscripter?up_rollout=true")}>About Us</p>
                 <p className="bg-white text-black p-2 rounded-xl" onClick={()=>alert("All our current services are listed on fiverr.com at https://www.fiverr.com/appscripter?up_rollout=true")}>Login</p>
             </div> 
-            <div className="space-y-2 border p-2 rounded sm:hidden" onClick={()=>{setShow(!show);console.log("here")}}>
+            <div className="space-y-2 border p-2 rounded sm:hidden" onClick={()=>setShow(!show)}>
               <div className="w-8 h-1 bg-white"></div>
               <div className="w-8 h-1 bg-white"></div>
               <div className="w-8 h-1 bg-white"></div>
