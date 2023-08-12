@@ -31,7 +31,7 @@ export const CommingSoon = ({}) => {
                         Fiverr.com
                     </p>
                     <div className="w-full flex justify-end pr-4">
-                    <Link href="https://www.fiverr.com/appscripter?up_rollout=true" className='w-full'>
+                    <Link href="https://www.fiverr.com/appscripter?up_rollout=true" className='w-inherit'>
                         <Button1 className="w-1/3 text-white">Go To Fiverr Now!</Button1>
                     </Link>
                     </div>
