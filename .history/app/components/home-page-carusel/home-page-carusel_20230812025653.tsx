@@ -61,7 +61,7 @@ const handleCarusel: Carusel = {
 function Home() {
     const [fiverr, setFiverr]= React.useState<boolean>(false)
     return (
-        <div className="flex  p-2 px-10 flex-wrap">
+        <div className="flex md:h-[50vh] p-2 px-10 flex-wrap">
             <div className="w-full md:w-1/2 p-2">
                 <h1 className="text-5xl font-bold">
                     Create tailor made websites and web aplications.
@@ -105,8 +105,8 @@ function Two() {
                     Learn More
                 </button>
             </div>
-            <div className="w-full md:w-1/2 p-2 flex items-center justify-center">
-                <Image src="/WebAppWithNoRecurringCharges.png" className="w-full" width={800} height={800} alt="Payment plan"/>
+            <div className="relative w-full md:w-1/2 p-2">
+                <Image src="/WebAppWithNoRecurringCharges.png" className="absolute left-[25%] h-full w-full" width={800} height={200} alt="Payment plan"/>
 
             </div>
         </div>

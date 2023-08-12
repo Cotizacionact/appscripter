@@ -61,7 +61,7 @@ const handleCarusel: Carusel = {
 function Home() {
     const [fiverr, setFiverr]= React.useState<boolean>(false)
     return (
-        <div className="flex  p-2 px-10 flex-wrap">
+        <div className="flex md:h-[50vh] p-2 px-10 flex-wrap">
             <div className="w-full md:w-1/2 p-2">
                 <h1 className="text-5xl font-bold">
                     Create tailor made websites and web aplications.
