@@ -34,7 +34,7 @@ export const HomePageCarusel = () => {
     React.useEffect(()=>{setState(1)},[])
 
     return (
-        <div className="relative min-h-[50vh]">
+        <div className="relative">
             {handleCarusel[state as keyof Carusel]}
             <button className="absolute right-0 top-[50%] flex w-10 rotate-90 justify-center bg-black p-0.5 text-white opacity-40 hover:opacity-70" onClick={()=>{ console.log(state,max); if(state < max){;setState(state+1 as keyof Carusel)}else{setState(1)}}}>
                 <AiOutlineArrowUp />
@@ -42,12 +42,10 @@ export const HomePageCarusel = () => {
             <button className="absolute left-0 top-[50%] flex w-10 -rotate-90 justify-center bg-black p-0.5 text-white opacity-40 hover:opacity-70" onClick={()=>{if(state > min){setState(state-1 as keyof Carusel)}else{setState(3)}}}>
                 <AiOutlineArrowUp />
             </button>
-            <div className='absolute left-[50%] bottom-0'>
-                <div className='flex w-full space-x-4 justify-center'>
-                    <div className={`${state === 1 ? "w-4 bg-black/50":"w-3 bg-black/25"} h-1  `}></div>
-                    <div className={`${state === 2 ? "w-4 bg-black/50":"w-3 bg-black/25"} h-1  `}></div>
-                    <div className={`${state === 3 ? "w-4 bg-black/50":"w-3 bg-black/25"} h-1  `}></div>
-                </div>
+            <div className='flex w-full space-x-4 justify-center'>
+                <div className={`${state === 1 ? "w-4 bg-black/50":"w-3 bg-black/25"} h-1  `}></div>
+                <div className={`${state === 2 ? "w-4 bg-black/50":"w-3 bg-black/25"} h-1  `}></div>
+                <div className={`${state === 3 ? "w-4 bg-black/50":"w-3 bg-black/25"} h-1  `}></div>
             </div>
         </div>
     );
